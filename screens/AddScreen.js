@@ -1,7 +1,7 @@
 import { Ionicons } from '@expo/vector-icons';
 import * as WebBrowser from 'expo-web-browser';
 import * as React from 'react';
-import { StyleSheet, Text, View, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, ScrollView,TouchableOpacity } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
 import AddTaskComponent from '../components/AddTaskComponent'
 export default function AddScreen() {
@@ -9,14 +9,24 @@ export default function AddScreen() {
     
     <View style={styles.container}>
           
-              <AddTaskComponent />
-              <AddTaskComponent />
-              <AddTaskComponent />
-              <AddTaskComponent />
-              <AddTaskComponent />
-              <AddTaskComponent />
-              <AddTaskComponent />
-          
+              <AddTaskComponent title="Reminder" />
+          <AddTaskComponent title="Event" />
+          <AddTaskComponent title="Goal" />
+              <AddTaskComponent title="Savings"/>
+              <AddTaskComponent title="Project"/>
+              <AddTaskComponent title="Meeting"/>
+              <AddTaskComponent title="Countdown"/>
+             <TouchableOpacity style={{
+              height: 150,
+              width: 170,
+              margin: 10,
+              marginLeft: 20,
+              marginBottom: 3,
+              alignItems:'center',
+              justifyContent:'center'}}>
+              <Ionicons name='md-add' size={50} color='#86accf'/> 
+              </TouchableOpacity>
+                       
           
           
     </View>

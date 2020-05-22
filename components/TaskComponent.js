@@ -6,8 +6,8 @@ export default function(){
         <TouchableOpacity>
             <View style={styles.container}>
                 
-                <View style={{ flex: 2 }}>
-                    <Text style={{ fontSize: 18, fontWeight: 'bold' }}>Go to the market</Text>
+                <View style={{ flex: 2 , marginLeft:10}}>
+                    <Text style={{ fontSize: 16, fontWeight: 'bold', color:'#2f95dc' }}>Go to the market</Text>
                 </View>
                 
             </View>
@@ -26,7 +26,7 @@ const styles= StyleSheet.create({
         display: 'flex',
         padding: 10,
         backgroundColor: '#FFFFFF',
-        elevation: 5,
+        elevation: 0,
 
     }
 })

@@ -30,7 +30,7 @@ export default function HomeScreen() {
                     <Text style={{ fontWeight: 'bold' }}>Today </Text>
                     <Text style={{ fontWeight: 'bold' }}>Upcoming </Text>
                 </View>
-                <ScrollView style={{ marginTop: 30, backgroundColor: '#f7fbfd', }}>
+                <ScrollView style={{ marginTop: 30 }}>
                     <TaskComponent />
                     <TaskComponent />
                     <TaskComponent />

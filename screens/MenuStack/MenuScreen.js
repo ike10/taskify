@@ -7,15 +7,15 @@ import MenuComponent from '../components/MenuComponent'
 export default function MenuScreen() {
     return (
         <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
-            <MenuComponent title='Profile' MenuIconName="md-contact"/>
+            <MenuComponent title='Profile' MenuIconName="md-contact" />
             <MenuComponent title='Chat' MenuIconName="md-chatboxes" />
             <MenuComponent title='Projects' MenuIconName="ios-apps" />
             <MenuComponent title='Teams' MenuIconName="md-contacts" />
-            <MenuComponent title='About' MenuIconName="md-information-circle"/>
-            <MenuComponent title='Help' MenuIconName="ios-help-circle"/>
+            <MenuComponent title='About' MenuIconName="md-information-circle" />
+            <MenuComponent title='Help' MenuIconName="ios-help-circle" />
             <MenuComponent title='Settings' MenuIconName="ios-settings" />
-            
-            
+
+
         </ScrollView>
     );
 }
