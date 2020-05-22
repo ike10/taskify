@@ -6,7 +6,7 @@ import HomeScreen from '../screens/HomeScreen';
 import AddScreen from '../screens/AddScreen';
 import NotificationScreen from '../screens/NotificationScreen'
 import CalendarScreen from '../screens/CalendarScreen'
-import MenuScreen from '../screens/MenuScreen'
+import MenuStackScreen from '../screens/MenuStackScreen'
 const BottomTab = createBottomTabNavigator();
 const INITIAL_ROUTE_NAME = 'Home';
 
@@ -14,16 +14,24 @@ export default function BottomTabNavigator({ navigation, route }) {
     // Set the header title on the parent stack navigator depending on the
     // currently active tab. Learn more in the documentation:
     // https://reactnavigation.org/docs/en/screen-options-resolution.html
-    navigation.setOptions({ headerTitle: getHeaderTitle(route) });
+    navigation.setOptions({
+        headerTitle: getHeaderTitle(route),
+        headerStyle: {
+            backgroundColor: '#ffffff',
+        },
+        headerTintColor: '#2f95dc',
+        headerTitleStyle: {
+            fontWeight: 'bold',
+            alignSelf: 'center'
+        },
+        headerMode:'none',
+        headerShown: false
+        
+    });
 
     return (
         <BottomTab.Navigator
-            initialRouteName={INITIAL_ROUTE_NAME}
-            screenOptions={{
-                headerStyle: {
-                    backgroundColor: '#374d61',
-                },
-            }}
+            initialRouteName={INITIAL_ROUTE_NAME}      
         >
             <BottomTab.Screen
                 name="Home"
@@ -31,6 +39,8 @@ export default function BottomTabNavigator({ navigation, route }) {
                 options={{
                     title: 'Home',
                     tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-home" />,
+                   headerShown:false,
+                   headerMode:'screen',
                 }}
             />
             <BottomTab.Screen
@@ -59,11 +69,15 @@ export default function BottomTabNavigator({ navigation, route }) {
             />
             <BottomTab.Screen
                 name="Menu"
-                component={MenuScreen}
+                component={MenuStackScreen}
                 options={{
                     title: 'Menu',
                     tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-menu" />,
+                    headerShown: false,
+                    headerMode: 'none',
+                    header:null
                 }}
+                
             />
         </BottomTab.Navigator>
     );
@@ -82,6 +96,6 @@ function getHeaderTitle(route) {
         case 'Notifications':
             return 'Notifications';
         case 'Menu':
-            return 'Menu';
+            return 'menu';
     }
 }

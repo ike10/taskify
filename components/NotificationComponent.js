@@ -6,14 +6,15 @@ export default function () {
         <TouchableOpacity>
             <View style={styles.container}>
                 <View style={{ display: 'flex', flexDirection: 'row', flex: 2, }}>
-                    <Text style={{ flex: 3, fontSize: 12 }}>00:00</Text>
-                    <Text style={{ flex: 1, fontSize: 12 }}>Work</Text>
+                    <Text style={{ flex: 3, fontSize: 12, fontWeight: 'bold'  }}>00:00</Text>
+                    
                 </View>
                 <View style={{ flex: 2 }}>
-                    <Text style={{ fontSize: 14, fontWeight: 'bold', color: '#2f95dc' }}>You have 3 day left until fintech seminar</Text>
+                    <Text style={{ fontSize: 14, fontWeight: 'bold', color: '#000000' }}>You have 3 day left until fintech seminar</Text>
                 </View>
                 <View style={{ display: 'flex', flexDirection: 'row', flex: 2 }}>
-                    <Text style={{ flex: 2, fontSize: 14 }}>Lagos</Text>
+                    <Text style={{ flex: 3, fontSize: 14 }}>Lagos</Text>
+                    <Text style={{ flex: 1, fontSize: 12 }}>Work</Text>
                 </View>
             </View>
         </TouchableOpacity>

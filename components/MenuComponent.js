@@ -2,8 +2,9 @@ import React from 'react'
 import { View, StyleSheet, Text, TouchableOpacity } from 'react-native'
 import { Ionicons } from '@expo/vector-icons';
 export default function ({title, MenuIconName}) {
+    
     return (
-        <TouchableOpacity>
+ 
             <View style={styles.container}>
                 <View style={{display:'flex', flexDirection:'row'}}>
                     <Ionicons
@@ -15,7 +16,7 @@ export default function ({title, MenuIconName}) {
                     <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#2f95dc', marginLeft:10 }}>{title}</Text>
                 </View>
             </View>
-        </TouchableOpacity>
+
 
     )
 }
