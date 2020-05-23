@@ -7,7 +7,7 @@ export default function(){
             <View style={styles.container}>
                 
                 <View style={{ flex: 4 , marginLeft:10}}>
-                    <Text style={{ fontSize: 16, fontWeight: 'bold', color:'#133c59' }}>Go to the market</Text>
+                    <Text style={{ fontSize: 16, fontWeight: 'bold',  }}>Go to the market</Text>
                     <Text style={{ fontSize: 12, color: '#808080',  marginLeft:10 }}>Go to the market</Text>
                       
                 </View>
@@ -26,15 +26,17 @@ export default function(){
 
 const styles= StyleSheet.create({
     container:{
-        height: 60,
+        height: 80,
         marginBottom: 3,
-        marginTop: 3,
-        borderRadius: 5,
+        marginTop: 10,
+        borderRadius: 10,
         display: 'flex',
         flexDirection: 'row',
         padding: 10,
-        backgroundColor: '#FFFFFF',
-        elevation: 0,
+        backgroundColor: '#edf2f5',
+        elevation: 5,
+        marginLeft:5,
+        marginRight: 5,
 
     }
 })

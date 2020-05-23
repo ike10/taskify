@@ -32,15 +32,19 @@ export default function MenuStackScreen({navigation, route}) {
              headerTitleAlign: 'center',
              headerTitle: getHeaderTitle(route),
              headerStyle: {
-                 backgroundColor: '#ffffff',
+                 backgroundColor: '#2f95dc',
+                 height: 120,
+                 elevation: 5,
+                 
              },
-             headerTintColor: '#2f95dc',
+             headerTintColor: '#ffffff',
              headerTitleStyle: {
                  fontWeight: 'bold',
                  alignSelf: 'center'
              },
              headerMode: 'none'
          }} >
+             
              <Stack.Screen 
              name="Menu" 
              component={MenuScreen} 

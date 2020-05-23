@@ -10,10 +10,10 @@ export default function ({title, MenuIconName}) {
                     <Ionicons
                         name={MenuIconName}
                         size={30}
-                        color='#2f95dc'
+                    color='#133c59'
                         
                     />
-                    <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#2f95dc', marginLeft:10 }}>{title}</Text>
+                <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#133c59', marginLeft:10 }}>{title}</Text>
                 </View>
             </View>
 
